@@ -4,7 +4,7 @@ import { useState } from 'react';
 const D = {
   brand: 'S8TOTO',
   domain: 's8totolinkalternatiflogin.com',
-  logo: 'https://i.imgur.com/e5Cq4FC.png',
+  logo: '/logo.svg',
   linkLogin: 'https://loginwap.gelapsekali.com/s8',
   linkDaftar: 'https://daftarwap.gelapsekali.com/S8',
   amphtml: 's8totolinkalternatiflogin.com',
@@ -43,12 +43,12 @@ export default function Home() {
         <title>S8TOTO : Akses Alternatif Terkini | Gudang Rahasia Para Jutawan</title>
         <meta name="description" content="S8TOTO adalah situs resmi terpercaya dengan akses login cepat, keamanan SSL 256-bit, dan dukungan 24/7. Daftar gratis sekarang." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href={D.logo} />
+        <link rel="icon" type="image/svg+xml" href={D.logo} />
         <link rel="canonical" href={'https://' + D.domain + '/'} />
         <link rel="amphtml" href={'https://' + D.domain + '/amp/'} />
         <meta property="og:title" content="S8TOTO : Akses Alternatif Terkini | Gudang Rahasia Para Jutawan" />
         <meta property="og:description" content="S8TOTO adalah situs resmi terpercaya dengan akses login cepat, keamanan SSL 256-bit, dan dukungan 24/7. Daftar gratis sekarang." />
-        <meta property="og:image" content={D.logo} />
+        <meta property="og:image" content={'https://' + D.domain + D.logo} />
         <meta property="og:url" content={'https://' + D.domain} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
